@@ -2,7 +2,7 @@
 
 ## 
 
-Requests for top level resources will return a list of items. These list resources have pagination parameters that control which results are returned. These parameters at a minimum include `limit`, `starting_after`, and `ending_before`.
+Requests for top level resources will return a list of items. These list resources have pagination parameters that control which results are returned. These parameters include `limit`, `starting_after`, and `ending_before`.
 
 `limit` specifies the number of results to return. Its default value is 25, its minimum is 1 and its maximum is 100.
 
