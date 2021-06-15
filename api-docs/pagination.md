@@ -2,11 +2,17 @@
 
 ## 
 
-Requests for most top level resources will return a list of items. These list resources all all have pagination parameters that control how the results are returned. These parameters at a minimum include `limit`, `starting_after`, and `ending_before`.
+Requests for top level resources will return a list of items. These list resources have pagination parameters that control which results are returned. These parameters at a minimum include `limit`, `starting_after`, and `ending_before`.
 
-`limit` is used to specify the number of items to return in the result.
+`limit` specifies the number of results to return. Its default value is 25, its minimum is 1 and its maximum is 100.
 
-`starting_after` and `starting_before` are used to specify a cursor location. Both of these parameters accept an object id, which is a beginning point from which to return `limit` results. Only one should be used at a time.
+`starting_after` and `ending_before` are used to specify a cursor location. Both of these parameters accept an object id, which is a beginning point from which to return `limit` results. Only one should be used at a time.
+
+### Errors:
+
+`limit` must be an integer between 1 and 100. Values outside of this range will result in a 400 level error response.
+
+`starting_after` and `ending_before` must be supplied one at a time. If they are both supplied the response will be a 400 level error.
 
 ### Example:
 
