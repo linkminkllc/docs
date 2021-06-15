@@ -10,7 +10,7 @@ Get Commissions
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Get a list of all commissions that match a set of filters. See pagination and filters.
+Retrieve a list of commissions using zero or more filters. Filters are combined in an 'AND' fashion - only results matching all of the filters will be returned. 
 {% endapi-method-description %}
 
 {% api-method-spec %}
