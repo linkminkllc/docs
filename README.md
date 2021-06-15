@@ -1,5 +1,8 @@
 ---
-description: Commissions are
+description: >-
+  **Commissions** are created when a customer makes a purchase that an
+  affiliates hould receive a commission for. Commissions are created
+  automatically if you use Stripe for charges or invoicing. You on
 ---
 
 # Commissions
