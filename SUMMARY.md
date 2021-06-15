@@ -5,3 +5,6 @@
 
 ## API Docs
 
+* [Authentication](api-docs/authentication.md)
+* [Pagination](api-docs/pagination.md)
+

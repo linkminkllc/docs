@@ -1,10 +1,3 @@
----
-description: >-
-  **Commissions** are created when a customer makes a purchase that an
-  affiliates hould receive a commission for. Commissions are created
-  automatically if you use Stripe for charges or invoicing. You on
----
-
 # Commissions
 
 {% api-method method="get" host="https://app.linkmink.com/api" path="/v0.1.0/commissions" %}
