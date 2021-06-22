@@ -18,6 +18,14 @@ Bearer token using your api key. See "authentication" for instructions on authen
 {% endapi-method-headers %}
 
 {% api-method-query-parameters %}
+{% api-method-parameter name="sort\_direction" type="string" required=false %}
+must be one of 'asc' or 'desc'
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="sort\_field" type="string" required=false %}
+must be one of 'created\_at', 'revenue', or 'commission'
+{% endapi-method-parameter %}
+
 {% api-method-parameter name="max\_date" type="string" required=false %}
 return commissions that were created before the supplied date
 {% endapi-method-parameter %}
